@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:#2D2D2D;
+}
+/* header*/
+/* ***************************navbar********************** */
+.logo-container{
+    margin: auto;
+    width: 100px;  
+}
+.logo-container img:hover{
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+/* cacher l'espace sous la position fixed du menu*/
+.logo-mask{
+    width: 100%;
+    height: 235px;
+}
+header nav{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* le sous menu du service */
+.sous_menu {
+    display: none;  
+}
+.sous_menu li a{
+    padding: 15px;
+    font-size: large;
+}
+nav li:hover .sous_menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+}
+/* fin sous menu */
+
+header li{
+    font-size: 1.2em;
+    font-family: 'kodchasan';
+}
+header a:hover{
+    color: #E42B69;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.register{
+    font-size:1.1em;
+}
+.register a{
+    color: #E42B69;
+}
+.register a:hover{
+    color: #2D2D2D;
+}
+
+/* **************************header image principale*********************** */
+.header-img-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.547);
+    height: 90vh;
+}
+.header-img-container img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+}
+/* ******************main***************************** */
+.rose-color-container{
+    background-color: #E42B69;
+    height: 120px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.rose-color-container .text{
+    color: white;
+    font-family: 'Kodchasan';
+    font-size: x-large;
+    width: 800px;
+    text-align: center;
+    margin: auto;   
+}
+
+.section1{
+    display: flex;
+    padding: 60px;
+}
+.section1 .text1-header{
+    padding-right: 50px;
+}
+.text1-header{
+    font-size: large;
+    font-family: 'kodchasan';
+    color: #2D2D2D;
+}
+.text1-header a{
+    color: #E42B69;
+}
+.Text2-header{
+   margin: auto;
+   text-align: center;
+  width: 800px;
+  font-size: x-large;
+  font-family: 'kodchasan';
+  color: #13414E;
+  margin-bottom: 50px;
+}
+.Text2-header span{
+    color: #E42B69;
+}
+.text-ressources-container{
+    background-color: #91D1E2;
+    padding: 60px;
+}
+.text-ressources-container div{
+    font-size: x-large;
+    color: #2D2D2D;
+    text-align: center;
+}
+.tree-items-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.item{
+    width: 300px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.15)  
+}
+.item:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+.item div{
+text-align: center;
+color: #E42B69;
+font-family: 'Kodchasan';
+}
+.item img{
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+}
+
+.message-Eveiller{
+   text-align: center;
+   font-family: 'kodchasan';
+   font-size: xx-large;
+   width: 800px;
+   margin: auto;
+   color: #2D2D2D;
+   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15)
+}
+
+.background-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #91D1E2;
+    height: 500px;
+}
+.mini-text-container a{
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: #E42B69;
+    font-size: large;
+    
+}
+.mini-text-container a:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.mini-text-container div{
+    text-transform: lowercase;
+    font-size: large;
+    font-family: 'kodchasan';
+}
+.img-and-text-container{
+    width: 300px;
+}
+.img-and-text-container img{
+    width: 80%;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.15)  
+}
+.img-and-text-container img:hover{
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;   
+}
+.bibliotheque{
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    padding-top: 30px;
+    text-align: center;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: 'kodchasan';
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+h5{
+    padding-top: 10px;
+    text-align: center;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-family: 'kodchasan';
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.bibliotheque img{
+    width: 200px;
+    margin: 80px;
+}
+.bibliotheque img:hover{
+    transform: scale(1.50);
+    transition: 0.6s ease-in-out;
+}
+/* ********************footer******************* */
+footer{
+    background-color: #a5d6e3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+footer img{
+    width: 300px;
+}
+.container-icons .fa-facebook{
+    color: #3b5998;
+    font-size: 60px;
+}
+.container-icons .fa-youtube{
+    color: #f70101;
+    font-size: 60px;
+    border-radius: 50px;
+}
+.container-icons a i{
+    margin: 30px;
+}
+.container-icons a i:hover{
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+footer ul li{
+    padding: 20px;
+}
+/* le sous menu du service */
+.sous_menu {
+    display: none;  
+}
+.sous_menu li a{
+    padding: 15px;
+    font-size: large;
+}
+nav li:hover .sous_menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+}
+/* fin sous menu */
+.container-icons div{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -80px;
+    padding-top: 50px;
+}
+/*----------------Code pour format de tablette--------------------*/
+@media(min-width: 768px) and (max-width: 1388px){
+
+.logo-container{
+    margin-right: 100px;
+    margin-top: 30px;
+    width: 50%;  
+}
+.logo-container img{
+    width: 50%;
+}
+header nav{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* le sous menu du service */
+
+.sous_menu li a{
+    padding: 15px;
+    font-size: small;
+}
+
+/* fin sous menu */
+
+header li{
+    font-size: 1.1em;
+    font-family: 'kodchasan';
+}
+
+.register{
+    font-size:1em;
+}
+.rose-color-container .text{
+    font-size: large;
+    width: 500px;  
+}
+.section1{
+    display: block;
+    padding: 60px;
+}
+.section1 .text1-header{
+    padding-right: 50px;
+    border: 1px solid#2d2d2d2c;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+.text1-header{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: large;
+    font-family: 'kodchasan';
+    color: #2D2D2D;
+}
+.img-container img{
+    border-radius: 10px;
+    margin-left: 35px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.Text2-header{
+   width: 700px;
+ }
+.header-img-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.547);
+    height: 30vh;
+}
+.tree-items-container{
+    display: block;
+    margin-left: 150px;
+    padding: 60px;
+}
+.item{
+    width: 320px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.15)  
+}
+.message-Eveiller{
+    text-align: center;
+    font-family: 'kodchasan';
+    font-size: x-large;
+    width: 700px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 40px;
+    color: #2D2D2D;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15)
+ }
+ /* ********************footer******************* */
+footer{
+    background-color: #a5d6e3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+footer img{
+    width: 200px;
+}
+.container-icons .fa-facebook{
+    color: #3b5998;
+    font-size: 60px;
+}
+.container-icons .fa-youtube{
+    color: #f70101;
+    font-size: 60px;
+    border-radius: 50px;
+}
+.container-icons a i{
+    margin: 20px;
+}
+
+footer ul li{
+    padding: 10px;
+}
+
+}
+
+/*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+
+@media(max-width: 767px){
+    #burger {
+        width:30px;
+        height:2px;
+        background:white;
+        display:inline-block;
+        position:relative;
+    }
+    #burger::before,
+    #burger::after {
+      content:'';
+      width:30px;
+      height:2px;
+      background:white;
+      display:inline-block;
+      position:absolute;
+      transform-origin: center;
+      transition: all 0.3s ease;
+    }
+    #burger.open {
+        background:transparent; /* la barre du milieu disparait */
+      }
+      /* celles du haut et du bas s'inclinent pour former une croix */
+      #burger.open::before {
+        transform: rotate(45deg); 
+        top:0;
+      }
+      #burger.open::after {
+        transform: rotate(-45deg);
+        top:0;
+      }
+    #burger::before {
+      top:-7px;
+    }
+    #burger::after {
+      top:7px;
+    }
+    #burger.open {
+        background:transparent; /* la barre du milieu disparait */
+      }
+      /* celles du haut et du bas s'inclinent pour former une croix */
+      #burger.open::before {
+        transform: rotate(45deg); 
+        top:0;
+      }
+      #burger.open::after {
+        transform: rotate(-45deg);
+        top:0;
+      }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+ a:hover{
+    color: #E42B69;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+/* header*/
+/* ***************************navbar********************** */
+.header-img-container{
+    position: relative;
+    background-image: url(images/header\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+}
+.background{
+    background-color: rgba(0, 0, 0, 0.731);
+    width: 100%;
+    height: 100vh;
+}
+
+header nav{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+.sous_menu {
+      display: none;
+      box-shadow: 0px 1px 2px #CCC;
+      background-color: aliceblue;    
+}
+.sous_menu li a{
+    padding: 15px;
+    font-size: 20px;
+    color: #2D2D2D;
+    text-transform: lowercase;
+}
+.sous_menu li a:hover{
+    color: #E42B69;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.deconnexion a{
+    color: #E42B69;
+}
+.deconnexion a:hover{
+    color: aliceblue;
+}
+nav li:hover .sous_menu{
+    display: block;
+    position: absolute;
+    /* top: 100%; */
+    z-index: 1000;
+    background-color: whitesmoke;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+}
+
+/* Full-width inputs */
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
+button{
+    background-color: #33b3fa;
+    color: white;
+    font-family: 'kodchasan';
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: white;
+    color: #33b3fa;
+    border: 1px solid#33b3fa;
+}

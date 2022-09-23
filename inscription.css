@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body{
+    background: #91D1E2;
+}
+.back-fleche-container img{
+    color: white;
+    margin-left: auto;
+    width: 80px;
+}
+.back-fleche-container{
+    background-color: #ffffff;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+h1, label{
+    font-family: 'kodchasan';
+    color: #2d2d2d;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=email], input[type=password], input[type=repeatpassword] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #33b3fa;
+    color: white;
+    font-family: 'kodchasan';
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: white;
+    color: #33b3fa;
+    border: 1px solid#33b3fa;
+}

@@ -1,0 +1,29 @@
+
+.back-fleche-container img{
+    margin-left: auto;
+    width: 50px;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+caption{
+    background-color: #91D1E2;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+
+thead th{
+    border: 2px solid black;
+    padding: 10px;
+}
+tbody td{
+    border: 2px solid black;
+    padding: 10px;
+}
