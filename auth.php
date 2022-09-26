@@ -18,7 +18,7 @@ session_start();
 
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=enfants_epanouis;port=3307', $db_username, $db_password);
+        $db = new PDO('mysql:host=localhost;dbname=enfants_epanouis;port=3306', $db_username, $db_password);
         // définition du mode d'erreur de PDO sur exception
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "connexion réussie";
@@ -60,7 +60,7 @@ session_start();
     }
 }
 else {
-    echo "veillez complèter tous les champs...";
+    echo "veuillez complèter tous les champs...";
         
     }
     // if(!($_POST['mot_de_passe']==$_POST['confirmer_mot_de_passe'])) 

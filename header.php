@@ -3,11 +3,9 @@
             <div class="logo-container">
                 <a href="index.php"><img src="Assets/Images/logo_enfants_épanouis.png" alt="" class="logo"></a>
             </div>
-            
-           
             <nav>
-            <a id="link" href="#"><span id="burger"></span></a>
-                <ul>
+                <a href=""></a>
+                <ul class="ul">
                     <li id="accueil"><a href="index.php">ACCUEIL</a></li>
                     <li id="parents"><a href="parents.php">PARENTS</a></li>
                     <li id="a-propos"><a href="a_propos.php">A PROPOS</a></li>

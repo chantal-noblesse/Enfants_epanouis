@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/d1e83cd76f.js" crossorigin="anonymous"></script>
+    <script src="header.js"></script>
 
     <title>EnfantsEpanouis</title>
 </head>    
