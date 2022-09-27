@@ -41,8 +41,8 @@
                             </li>
                             <li id="utilisateurs"><a href="#">LES PROGRAMMES</a>
                             <ul class="sous_menu">
-                                <li id="afficher"><a href="#">AFFICHER LES PROGRAMMES</a></li>
-                                <li id="ajouter"><a href="#">MISE A JOUR DES PROGRAMMES</a></li>
+                                <li id="afficher"><a href="affiche_programme.php">AFFICHER LES PROGRAMMES</a></li>
+                                <li id="ajouter"><a href="ajout_programme.php">MISE A JOUR DES PROGRAMMES</a></li>
                             </ul>
                             </li>
                             <li class="deconnexion"><a href="deconnexion.php">DECONNECTION</a></li>

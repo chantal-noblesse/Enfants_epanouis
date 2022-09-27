@@ -13,6 +13,9 @@ body{
     background-color: white;
     z-index: 50;
 }
+ .menu_mobile{
+     display: none; 
+}  
 ul{
     padding: 0;
     margin: 0;
@@ -308,7 +311,10 @@ nav li:hover .sous_menu{
 }
 /* ----------------Code pour format de tablette--------------------*/
  /* @media screen and (max-width: 1100px) and (min-width: 740px){}  */
-    @media screen and (max-width:800px){
+    @media screen and (max-width:810px){
+        .menu_mobile{
+            display: none; 
+       }
         .logo-container{
             margin-right: 100px;
             margin-top: 30px;
@@ -437,53 +443,75 @@ nav li:hover .sous_menu{
 /*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
 
  @media(max-width: 375px){
-    header ul{
-        display: block; 
+    .logo-container{
+        width: 50%;  
     }
-    /* .menu{
-        display: flex;
-        justify-content: flex-start;
-    } */
-    header ul{
-        display: block;
+    .logo-container img{
+        width: 50%;
+        margin-left: 35px;
     }
-    .ul{
-        display: none;
-    }
-    .ul:hover{
-        display: block;
-        position: absolute;
-        top: 100%;
-        z-index: 1000;
-    }
-    /* .sous_menu {
-        display: none;  
-    }
-    .sous_menu li a{
-        padding: 15px;
-        font-size: large;
-    }
-    nav li:hover .sous_menu{
-        display: block;
-        position: absolute;
-        top: 100%;
-        z-index: 1000;
-        background-color: whitesmoke;
-    } */
-    .rose-color-container .text{
-        font-size: smaller;
-        width: 300px;  
-    }
-    .section1{
-        display: inline-block;
     
+    .logo-mask{
+        width: 50%;
+        height: 200px;
     }
-    .section1 .text1-header{
-        padding-right: 50px;
-        border: 1px solid#2d2d2d2c;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        margin-bottom: 30px;
+    .menu_desktop{
+        display: none; 
+    } 
+   .menu_mobile{
+    display: block;
+    margin-left: 150px;
+   }
+   header li{
+    font-size: small;
+    font-family: 'kodchasan';
+}
+.menu{
+    font-size: 1.2 em;
+}
+.caher{
+    display: none; 
+}
+.menu_mobile li:hover .caher{
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+} 
+.register{
+    font-size: small;
+}
+
+.ul{
+    display: none;
+}
+.ul:hover{
+     display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+.header-img-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.547);
+    height: 20vh;
+}
+   
+ .rose-color-container .text{
+    font-size: smaller;
+     width: 300px;  
+ }
+ .section1{
+     display: inline-block;
+    
+}
+.section1 .text1-header{
+    padding-right: 50px;
+     border: 1px solid#2d2d2d2c;
+     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
     }
     .text1-header{
         padding-top: 20px;
@@ -506,9 +534,7 @@ nav li:hover .sous_menu{
         padding-top: 15px;
         padding-bottom: 05px;
     }
-    .logo-container img{
-        width: 20%;
-    }
+    
     .img-container img{
         width: 250px;
         margin-left: -1px;
@@ -551,13 +577,12 @@ nav li:hover .sous_menu{
     display: block;
     height: 1000px;
 }
-.mini-text-container a{
-    text-transform: capitalize;
-    margin-top: 20px;
-    color: #E42B69;
-    font-size: large;
-    
+.bibliotheque img{
+    width: 100px;
+    margin: 50px;
 }
+
+
 .mini-text-container a:hover{
     opacity: 0.5;
     transform: scale(1.05);
@@ -581,6 +606,40 @@ nav li:hover .sous_menu{
 .img-and-text-container img:hover{
     transform: scale(1.05);
     transition: 0.6s ease-in-out;   
+}
+
+/*-------------------------------------------------------footer-------------------------------------------------------*/
+footer{
+    background-color: #a5d6e3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+} 
+footer img{
+    width: 100px;
+}
+.container-icons .fa-facebook{
+    color: #3b5998;
+    font-size: 40px;
+}
+.container-icons .fa-youtube{
+    color: #f70101;
+    font-size: 40px;
+    border-radius: 50px;
+}
+.container-icons a i{
+    margin: 15px;
+}
+
+footer ul li{
+    padding: 5px;
+    font-size: small;
+}
+.container-icons div{
+    font-size: smaller;
+}
+.img-and-text-container{
+    margin: 35px;
 }
  }
     

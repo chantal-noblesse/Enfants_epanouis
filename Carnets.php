@@ -1,4 +1,22 @@
 <?php
+session_start();
+// connexion à la base de données
+$db_username = 'root';
+$db_password = 'root';
+
+try
+{
+    $db = new PDO('mysql:host=localhost;dbname=enfants_epanouis;port=3306', $db_username, $db_password);
+    // définition du mode d'erreur de PDO sur exception
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "connexion réussie";
+    
+}
+catch(PDOException $e){
+  echo "Erreur: " . $e->getMessage();
+}
+$getArticles=$db->query('SELECT * FROM articles');
+    
 
 ?>
 <!DOCTYPE html>
@@ -20,18 +38,29 @@
         <div class="background">
             <div class="text">Nos programmes</div>
         </div>
-        <div class="background">
+        <div class="background grid">
             <div class="text">Articles</div>
+            <?php
+    while($articles = $getArticles ->fetch()){
+
+    
+    ?>
+       
+          
+            <div class="contenu">
+                <h2> <?php echo $articles['titre'] ?></h2>
+                
+                <?php echo $articles['contenu'] ?>
+            </div>
+        <?php
+        }
+        ?>
         </div>
         <div class="background">
             <div class="text-container">
                 <div class="text">Vidéos</div>
                 <div class="titres">
-                    Titre
-                    Titre
-                    Titre
-                    Titre
-                    Titre
+                   
                 </div>
             </div>
             

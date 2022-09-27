@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="logo-footer-container">
-        <a href="#"><img src="Assets/Images/logo_enfants_épanouis.png" alt=""></a>
+        <a href="admin_page/connexion_admin.php"><img src="Assets/Images/logo_enfants_épanouis.png" alt=""></a>
     </div>
     <div class="container-icons">
         <a href="http://www.facebook.fr"><i class="fa-brands fa-facebook"></i></a>

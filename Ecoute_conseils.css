@@ -163,3 +163,164 @@ footer ul li{
     margin-left: -80px;
     padding-top: 50px;
 }
+/* ----------------Code pour format de tablette--------------------*/
+@media screen and (max-width:810px){
+    .menu_mobile{
+        display: none; 
+   }
+    .logo-container{
+        margin-right: 100px;
+        margin-top: 30px;
+        width: 50%;  
+    }
+    .logo-container img{
+        width: 50%;
+    }
+    header nav{
+        overflow: hidden;
+        width: 100%;
+        margin-top: 40px;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    /* le sous menu du service */
+    
+     .sous_menu li a{ 
+        padding: 15px;
+        font-size: small;
+    }
+     
+    /* fin sous menu */
+    
+    header li{
+        font-size: 1.1em;
+        font-family: 'kodchasan';
+    }
+    
+    .register{
+        font-size:1em;
+    }
+    /* ********************footer******************* */
+footer{
+   background-color: #a5d6e3;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 30px;
+} 
+footer img{
+   width: 200px;
+}
+.container-icons .fa-facebook{
+   color: #3b5998;
+   font-size: 60px;
+}
+.container-icons .fa-youtube{
+   color: #f70101;
+   font-size: 60px;
+   border-radius: 50px;
+}
+.container-icons a i{
+   margin: 20px;
+}
+
+footer ul li{
+   padding: 10px;
+}
+
+}
+
+
+
+    
+
+    /*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+
+ @media(max-width: 375px){
+    .logo-container{
+        width: 50%;  
+    }
+    .logo-container img{
+        width: 50%;
+        margin-left: 35px;
+    }
+    
+    .logo-mask{
+        width: 50%;
+        height: 200px;
+    }
+    .menu_desktop{
+        display: none; 
+    } 
+   .menu_mobile{
+    display: block;
+    margin-left: 150px;
+   }
+   header li{
+    font-size: small;
+    font-family: 'kodchasan';
+}
+.menu{
+    font-size: 1.2 em;
+}
+.caher{
+    display: none; 
+}
+.menu_mobile li:hover .caher{
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+} 
+.register{
+    font-size: small;
+}
+
+.ul{
+    display: none;
+}
+.ul:hover{
+     display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+/*-------------------------------------------------------footer-------------------------------------------------------*/
+footer{
+    background-color: #a5d6e3;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+} 
+footer img{
+    width: 100px;
+}
+.container-icons .fa-facebook{
+    color: #3b5998;
+    font-size: 40px;
+}
+.container-icons .fa-youtube{
+    color: #f70101;
+    font-size: 40px;
+    border-radius: 50px;
+}
+.container-icons a i{
+    margin: 15px;
+}
+
+footer ul li{
+    padding: 5px;
+    font-size: small;
+}
+.container-icons div{
+    font-size: smaller;
+}
+.img-and-text-container{
+    margin: 35px;
+}
+
+ }
+   

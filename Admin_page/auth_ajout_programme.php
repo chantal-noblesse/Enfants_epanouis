@@ -1,9 +1,10 @@
 <?php
 session_start();
+echo $_POST['titre'];
 
 
      
-    if(!empty($_POST['titre']) && !empty($_POST['contenu']))
+    if(!empty($_POST['titre']))
     {
      
     // connexion à la base de données
@@ -22,15 +23,13 @@ session_start();
     }
      
     $titre= $_POST['titre'];
-    $contenu=$_POST['contenu'];
-    $sql = 'INSERT INTO `articles`(`titre`, `contenu`) VALUES (:titre,:contenu)';
+    $sql = 'INSERT INTO `nos_programmes`(`titre`) VALUES (:titre)';
 
    
 
     $req = $db->prepare($sql);
     $req->bindvalue(':titre',$titre);
-    $req->bindvalue(':contenu',$contenu);
-    $exec = $req->execute(array(":titre"=>$titre,":contenu"=>$contenu));
+    $exec = $req->execute(array(":titre"=>$titre));
 
     if(!$exec){
       echo "un probleme est survenu, l'ajout n'a pas été faite!";
@@ -38,7 +37,7 @@ session_start();
     else{
       echo "
       <script type=\"text/javascript\"> alert('Articles bien poster')</script>";
-      header("Location:affiche_articles.php");
+      header("Location:affiche_programme.php");
     }
 }
 else {

@@ -15,7 +15,7 @@ try
 catch(PDOException $e){
   echo "Erreur: " . $e->getMessage();
 }
-$getArticles=$db->query('SELECT * FROM articles');
+$getArticles=$db->query('SELECT * FROM nos_progammes');
     
     
 ?>
@@ -24,24 +24,22 @@ $getArticles=$db->query('SELECT * FROM articles');
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="affiche_articles.css">
+    <link rel="stylesheet" href="affiche_programme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>articles</title>
+    <title>programmes</title>
 </head>
 <body>
     <div class="back-fleche-container">
         <a href="index.php"><img src="icons/md-arrow-round-back.svg" alt="" class="logo"></a>
     </div>
 <table>
-        <caption>Informations des articles</caption>
+        <caption>Informations des programmes</caption>
         <thead>
         <tr>
             <th>id</td>
             <th>titre</td>
-            <th>contenu</td>
             <th>date_publication</td>
             <th>date_modification</td>
-            <th>action</td>
         </tr>
         </thead>
         <?php
@@ -52,14 +50,8 @@ $getArticles=$db->query('SELECT * FROM articles');
         <tbody>
             <td><?php echo $articles['id'] ?></td>
             <td><?php echo $articles['titre'] ?></td>
-            <td><?php echo $articles['contenu'] ?></td>
             <td><?php echo $articles['date_publication'] ?></td>
             <td><?php echo $articles['date_modification'] ?></td>
-            <!-- <td ><?php echo $articles['action'] ?></td> -->
-            <td>
-                <a href="modifier.php" class="modifier">modifier</a>
-                <a href="suprimer_article.php? id=<?= $articles['id'] ?>" class="suprimer">supprimer</a>
-            </td>
         </tbody>
         <?php
         }
